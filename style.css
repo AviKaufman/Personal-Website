@@ -14,6 +14,39 @@ body
     align-items: center;
     min-height: 100vh;
 }
+
+
+.nav-container {
+    position: fixed !important;
+    top: 0;
+    width: 69.5%;
+    background-color: #003147;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .nav-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .nav-container li {
+    margin: 0 10px;
+  }
+
+  .nav-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav-container a:hover {
+    color: #9ca1a1;
+  }
+
 .container
 {
     position: relative;
@@ -115,7 +148,6 @@ body
     color: white;
     font-weight: 300;
     text-decoration: none;
-    font-size: 2px;
 
 }
 .contactInfo ul li span .website 
@@ -162,9 +194,7 @@ body
 }
 .about
 {
-    margin-bottom: 50px;
     padding-bottom: 27px;
-    border-bottom: 1px solid black;
 }
 .about:last-child
 {
@@ -172,7 +202,11 @@ body
 }
 .title2
 {
-    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: #003147;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -189,25 +223,25 @@ p
     align-items: center;
     position: relative;
 }
+
+/* make the button in the center of the page and light up when you hover over it */
+
 .button {
-    font-size: 70px;
-    text-decoration: none;
-    background-color: #003147;
-    color: #fff;
-    padding: 0px 0px 0px 0px;
-    border-top: 1px solid #003147;
-    border-right: 1px solid #003147;
-    border-bottom: 1px solid #003147;
-    border-left: 1px solid #003147;
-    position:relative;
-    align-items: center;
+    position: relative;
     justify-content: center;
+    background-color: #003147;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     display: flex;
-    width:70%;
-    border-radius: 5%;
-    border-bottom: 10px solid rgba(255,255,255,0.2);
-    border-left: 10px solid rgba(255,255,255,0.2);
-    border-right: 10px solid rgba(255,255,255,0.2);
-    border-top: 10px solid rgba(255,255,255,0.2);
-    
+    font-size: 16px;
+    border-radius: 12px;
+    width: 40%;
+    padding: 14px 28px;
+  }
+  
+  .button:hover {
+    background-color: rgba(0, 49, 71, 0.5);
+    color: white;
   }
